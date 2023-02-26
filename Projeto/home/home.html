@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MyHealth, parte para verificar as vacinas da conta.">
+        <meta name="keywords" content="MyHealth, Vacina, Controle, saúde, conta, usuário">
+        <meta name="author" content="Guilherme Chizzolini Andreotti">
+        <meta http-equiv="refresh" content="600">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="stylesheet" type="text/css" href="../headerstyle.css">
+        
+        <title>MyHealth</title>
+
+        <script>
+            /* Essa função permite chamar duas funções para um único HTML, podendo aplicar o script do cria topo com o da página */
+            function carregaScript(url){    
+                let head = document.getElementsByTagName('head')[0]
+                let script = document.createElement('script')
+                script.type = 'text/javascript'
+                script.src = url
+                head.appendChild(script)
+            }      
+            carregaScript("../criatoposcript.js")
+        </script>
+        
+    </head>
+
+
+    <body>
+        <div id="tudo2">
+            <header id="criatopo"></header>
+
+            <div class ="buscar-barra">  
+                <img src="../img/search.png"/>
+                <input type="text" placeholder="PESQUISAR VACINA.." name="search" id="pesquisaBarra">
+            </div> <br>
+
+            <article class="grid"></article>
+
+            <footer>
+                <button class="botaoembaixo" id="goVacinas">   
+                    Nova Vacina
+                </button> 
+                <br>
+            </footer>          
+            <br>
+        </div>
+        
+        <script type="module" src="homescript.js"></script>
+    </body>
+
+</html>

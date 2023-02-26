@@ -1,0 +1,184 @@
+
+#tudo2{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+
+.popUpBackground{
+    position: fixed;
+    background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,0.8) 0%, rgba(51,51,51,0.8) 35%, rgba(51,51,51,0.9) 100%);
+    width: 100%;
+    height: 100%; 
+}
+
+body{
+    background-color: #ADD5D0;
+}
+
+/* Form */
+::placeholder{
+    color: #3F92C5;
+}
+
+#my_file {
+    display: none;
+}
+
+.flex-pop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-janela{
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.pPergunta{
+    margin-top: 10%;
+    color:#FD7979;
+}
+
+.divSimCancelar{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popupSim{
+    border: none;
+    font-size: 30px;
+    width: 32%;
+    height: 20%;
+    color:white;
+    background-color: #FD7979;
+}
+
+.popupCancelar{ 
+    border: none; 
+    font-size: 30px;
+    width: 32%;
+    height: 20%;
+    background-color:#3F92C5;
+    color:white;  
+}
+
+.flex-pai-geral{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 15px;
+    padding-left: 1%;  
+    vertical-align: middle; 
+    line-height: 1.8;
+}
+
+#div-botao{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    padding-right: 2%;
+}
+
+.lixo{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.botao-excluir{
+    vertical-align: middle;
+    background-color: #FD7979;
+    color:white;
+    border: none;
+    width: 8%;
+    height: 45px;
+}
+
+.flex-pai-geral section{ 
+    color:white;
+}
+
+.flex-filho-Campos-Titulos{
+    margin-top: 10px;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: right;  
+}
+
+#prox{
+    margin-top: 52%;
+}
+
+.flex-filho-Campos-Entradas{
+    font-size: 25px;
+    text-align: left;  
+}
+
+.FormularioCampo, .FormularioBotao{
+    color: #3F92C5;
+    border: none;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 299px;
+}
+
+.FormularioBotao{
+    color:white;
+    font-size: 22px;
+    height: 42px;
+    background-color: #3F92C5;
+}
+
+input[type="radio"]:checked::after{
+    background-color: blue;
+}
+
+.form2Radio{
+    vertical-align: middle;
+    width: 45px;
+    height: 35px;
+}
+
+.flex-filho-Campos-Imagem{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 299px;
+}
+
+#img-cad{
+    background-color: #3F92C5;
+    width: 100%;
+    height: 150px;
+}
+
+.imagem{
+    margin-top: 5%;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.botaoembaixo{
+    background: #37BD6D;
+    width: 188px;
+    height: 40px;
+    color:white;
+    border:none;
+    font-weight: bold;  
+}

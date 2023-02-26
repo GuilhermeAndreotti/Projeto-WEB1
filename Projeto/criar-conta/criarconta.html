@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MyHealth, parte para criar as conta">
+        <meta name="keywords" content="MyHealth, Vacina, Controle, saúde, conta, usuário">
+        <meta name="author" content="Guilherme Chizzolini Andreotti">
+        <meta http-equiv="refresh" content="600">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="criarconta.css">
+        <link rel="stylesheet" type="text/css" href="../headerstyle.css">
+        <title>MyHealth</title>
+
+        <script>
+            /* Essa função permite chamar duas funções para um único HTML, podendo aplicar o script do cria topo com o da página */
+            function carregaScript(url){    
+                let head = document.getElementsByTagName('head')[0]
+                let script = document.createElement('script')
+                script.type = "text/javascript"
+                script.src = url
+                head.appendChild(script)
+            }
+            carregaScript("../criatoposcript.js")
+        </script>
+
+    </head>
+
+    <body>
+
+        <div id="tudo2">
+
+            <header id="criatopo"> </header>     
+        
+            <div class="flex-pai-CadastroCompleto">
+                <div class="flex-filho-Campos">
+                    <p><label for="nomeCompleto">Nome completo </label> </p>
+                    <p><label for="sexo">Sexo </label></p>
+                    <p><label for="nascimentoData">Data nascimento </label></p>
+                    <p><label for="email">E-mail </label></p>
+                    <p><label for="senha">Senha </label></p>
+                    <p><label for="senha2">Repetir Senha </label></p>
+                </div>
+
+            <div class="flex-filho-Entradas">
+                    <p><input class="FormularioCampo" type="text" placeholder="Jurandir Pereira" id="inputNome"> </p>
+                    <p>
+                        <input type="radio" name="genero" class="form1Radio" value="1" id="Masculino"/> Masculino 
+                        <input type="radio" name="genero" class="form1Radio" value="2" id="Feminino" /> Feminino
+                    </p>
+                    <p><input class="FormularioCampo" id="data1" type="date"></p>
+                    <p><input class="FormularioCampo" type="text" placeholder="jurandir.pereira@hotmail.com" id="email"></p>
+                    <p><input class="FormularioCampo" type="password" placeholder="*******" id="senha1"></p>
+                    <p><input class="FormularioCampo" type="password"placeholder="*******" id="senha2"> </p> 
+                </div>
+            </div>
+            <div id="aviso">
+
+            </div>
+
+            <footer class="footer">
+                <button class="botaoembaixo">   
+                    Cadastrar
+                </button> 
+            </footer>
+
+        </div>
+        <script type="module" src="criarcontascript.js"></script>
+    </body>
+
+</html>

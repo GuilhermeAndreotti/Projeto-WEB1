@@ -1,0 +1,69 @@
+/* CSS GERAL PARA TODAS AS TELAS */
+@import url('https://fonts.googleapis.com/css2?family=Averia Libre:wght@700&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Averia Libre', 'sans-serif';
+}
+
+.divHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background-color: #8fe1d9;
+    width: 100%;
+    height: 10%;
+}
+
+.geral{
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    margin-left: 18px;
+    color: #419ED7;
+}
+
+.Logo{
+    width: 51px;
+    height: 51px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+li{
+    float:left;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.botaotopo{
+    color:white;
+    font-weight: bold;
+    width: 165px;
+    height: 34px;
+    background: #419ED7;
+    border:none
+}
+
+.botaotopo2{
+    border:none;
+    width: 125px;
+    height: 34px;
+    background-color: #419ED7;
+    color:white;
+    border: none;
+}
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MyHealth, cadastro/edit de vacinas">
+        <meta name="keywords" content="MyHealth, Vacina, Controle, saúde, conta, usuário">
+        <meta name="author" content="Guilherme Chizzolini Andreotti">
+        <meta http-equiv="refresh" content="600">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="cadastro.css">
+        <link rel="stylesheet" type="text/css" href="../headerstyle.css">
+        
+        <title>MyHealth</title>
+
+        <script>
+            /* Essa função permite chamar duas funções para um único HTML, podendo aplicar o script do cria topo com o da página */
+            function carregaScript(url){    
+                let head = document.getElementsByTagName('head')[0]
+                let script = document.createElement('script')
+                script.type = 'text/javascript'
+                script.src = url
+                head.appendChild(script)
+            }      
+            carregaScript("../criatoposcript.js")
+        </script>
+
+    <body>   
+         
+        <div id="tudo2">             
+            <div id="popup"></div> <!-- Div para abrir o pop up encima de todo o html --> 
+
+            <header id="criatopo"></header>
+            <div id="div-botao">        
+                <button class="botao-excluir" id="excluir">
+                <img src="../img/trash.png" class="lixo"/> 
+                        Excluir      
+                </button> 
+            </div>                      
+            
+            <div class="flex-pai-geral"> 
+
+                <section class="flex-filho-Campos-Titulos">
+
+                    <p><label for="DataVacina"> Data de Vacinação</label></p>
+
+                    <p><label for="Vacina">Vacina</label></p>    
+
+                    <p><label for="DoseVacina">Dose</label></p>
+
+                    <p><label for="comprovanteImagem">Comprovante de Vacina</label></p>
+
+                    <p id="prox"><label for="proxVac">Proxima Vacinação</label></p> 
+
+                </section>
+
+                <section class="flex-filho-Campos-Entradas">
+
+                    <p><input class="FormularioCampo" type="date" id="data1" ></p>
+
+                    <p><input class="FormularioCampo" type="text" placeholder="Hepatite B" id="nomeVac"></p>
+
+                    <div id="optRadio">
+                        <input type="radio" name="dosagem" class="form2Radio" value="1" id="1a. Dose"/> 1a. Dose 
+                        <input type="radio" name="dosagem" class="form2Radio" value="2" id="2a. Dose" /> 2a. Dose
+                        <input type="radio" name="dosagem" class="form2Radio" value="3" id="3a. Dose"/> 3a. Dose
+                        <input type="radio" name="dosagem" class="form2Radio" value="4" id="Reforço"/> Reforço 
+                        <input type="radio" name="dosagem" class="form2Radio" value="5" id="Dose única"/> Dose única
+                    </div>
+
+                        <div class="flex-filho-Campos-Imagem">
+
+                            <button class="FormularioBotao" id="abrirFile"> 
+                                Selecione uma imagem... 
+                                <input type="file" id="my_file">
+                            </button>
+                            <div class="imagem">
+                                <img src="" id="img-cad"/>   
+                            </div>
+
+                        </div>
+
+                    <p><input class="FormularioCampo" id="data2" type="date"></p>
+                                     
+                </section> 
+            </div>
+            <div id="aviso"></div>           
+            <footer class="footer2">
+                <button class="botaoembaixo">   
+                    Salvar Alterações
+                </button> 
+            </footer> 
+
+        </div>
+        <script type="module" src="CRUDVacinas.js"></script> 
+    </body>
+
+</html>

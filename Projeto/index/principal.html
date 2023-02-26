@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MyHealth, site para controle de vacinas!">
+        <meta name="keywords" content="MyHealth, Vacina, Controle, saúde, Datas">
+        <meta name="author" content="Guilherme Chizzolini Andreotti">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="principal.css">
+        <link rel="stylesheet" type="text/css" href="../headerstyle.css">
+        <script src="../criatoposcript.js"></script>
+        
+        <title>MyHealth</title>
+        <script>
+            /* Essa função permite chamar duas funções para um único HTML, podendo aplicar o script do cria topo com o da página */
+            function carregaScript(url){    
+                let head = document.getElementsByTagName('head')[0]
+                let script = document.createElement('script')
+                script.type = 'text/javascript'
+                script.src = url
+                head.appendChild(script)
+            }      
+            carregaScript("../criatoposcript.js")
+            carregaScript("principalscript.js")
+        </script>
+    </head>
+
+    <body>
+        <div id="tudo2">
+            <header id="criatopo"></header>
+            
+            <main>
+                <div id="p-meio"> Controle suas vacinas e <br> fique seguro 
+                    <br><br><br>
+                    <footer>
+                    <button class="botaoembaixo">   
+                        Criar minha Conta.
+                    </button>
+                    </footer>
+                </div>                      
+            </main>
+            
+        </div>
+        
+    </body>
+
+</html>

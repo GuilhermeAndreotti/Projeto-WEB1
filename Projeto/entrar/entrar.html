@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MyHealth, parte para verificar as vacinas da conta.">
+        <meta name="keywords" content="MyHealth, Vacina, Controle, saúde, conta, usuário">
+        <meta name="author" content="Guilherme Chizzolini Andreotti">
+        <meta http-equiv="refresh" content="600">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="entrar.css">
+        <link rel="stylesheet" type="text/css" href="../headerstyle.css">
+        <title>MyHealth</title>
+
+        <script>
+              /* Essa função permite chamar duas funções para um único HTML, podendo aplicar o script do cria topo com o da página */
+            function carregaScript(url){    
+                let head = document.getElementsByTagName('head')[0]
+                let script = document.createElement('script')
+                script.type = 'text/javascript'
+                script.src = url
+                head.appendChild(script)
+            }      
+            carregaScript("../criatoposcript.js")
+            sessionStorage.setItem("recuperar", 0);
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <div id="tudo2">
+            <header id="criatopo"></header>     
+        
+            <div class="flex-pai-CadastroCompleto">
+                <div class="flex-filho-Campos">
+                    <h2><label for="email">E-mail </label></h2>
+                    <h2><label for="senha">Senha </label></h2>
+                </div>
+
+                <div class="flex-filho-Entradas">
+                    <h2><input class="FormularioCampo" type="text" placeholder="jurandir.pereira@hotmail.com" id="email"></h2>
+                    <h2><input class="FormularioCampo" type="password" placeholder="*******" id="senha"></h2>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <button class="botaoembaixo">   
+                    Entrar
+                </button>
+
+                <p id="goSenha"> Esqueci minha senha </p>
+
+            </footer>
+
+        </div>
+        <script type="module" src="entrarscript.js"></script>
+    </body>
+
+</html>

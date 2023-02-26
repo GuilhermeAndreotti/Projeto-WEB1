@@ -1,0 +1,98 @@
+
+#tudo2{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+
+body{   
+    background-color: #ADD5D0;
+}
+
+/* Form */
+
+::placeholder {
+    color:#8B8B8B;
+}
+
+.buscar-barra{
+    display: flex;
+    background-color: white;
+    width: 98%;
+    height: 4%;
+    margin-left: 1%;
+    margin-top: 0.5%;    
+}
+
+.buscar-barra img{
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 18px;
+    height: 80%;
+}
+
+.buscar-barra input{
+    width: 100%;
+    margin-left: 1%;
+    font-size: 25px;
+    border: none;
+}
+
+article{
+    display: grid;
+    justify-content: space-evenly;
+    row-gap: 35px;
+    grid-template-columns: 22% 22% 22%;
+}
+
+.grid-filho{
+    background-color: white;
+    text-align: center;
+    padding-top: 3%;  
+    line-height: 2.2;
+    border-radius: 5%;
+}
+
+.nomeVacina{
+    color: #3F92C5;  
+}
+
+.Dose{
+    color:white;
+    display: inline-grid;
+    font-size: 16px;
+    background-color: #3F92C5;
+}
+
+.Data{
+    color:gray;
+}
+
+.imgv{
+    width: 80%;
+    height: 140px;
+    background-color: #3F92C5;
+}
+
+.ProximaDose{
+    padding-top: 9%;
+    padding-right: 5%; 
+    text-align: right;
+    color:red;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.botaoembaixo{
+    font-size: 16px;
+    background: #37BD6D;
+    width: 188px;
+    height: 40px;
+    color:white;
+    border:none;
+    font-weight: bold;  
+}
